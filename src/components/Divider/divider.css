@@ -1,0 +1,49 @@
+@import "../../base.css";
+
+.custom-divider {
+    width: 100%;
+    height: 15px;
+    border-bottom-color: black;
+}
+
+.divider-text {
+    font-size: 15px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.start {
+    text-align: start;
+}
+
+.center {
+    text-align: center;
+}
+
+.end {
+    text-align: end;
+}
+
+.light {
+    border-bottom-width: 1px;
+}
+
+.regular {
+    border-bottom-width: 2px;
+}
+
+.heavy {
+    border-bottom-width: 5px;
+}
+
+.solid {
+    border-bottom-style: solid;
+}
+
+.dashed {
+    border-bottom-style: dashed;
+}
+
+.dotted {
+    border-bottom-style: dotted;
+}
