@@ -7,13 +7,9 @@ export interface ButtonProps  {
      */
     primary?: boolean;
     /**
-     * What background color to use
-     */
-    backgroundColor?: string;
-    /**
      * How large should the button be?
      */
-    size?: "small" | "medium" | "large";
+    size?: "sm" | "md" | "lg";
     /**
      * Button contents
      */
@@ -31,21 +27,19 @@ export interface ButtonProps  {
  */
 const Button = ({
     primary = true,
-    backgroundColor,
-    size = "medium",
+    size = "md",
     onClick,
     label,
     }: ButtonProps) => {
     const mode = primary
-        ? "storybook-button--primary"
-        : "storybook-button--secondary";
+        ? "btn-primary"
+        : "btn-secondary";
     return (
         <button
         type="button"
-        className={["storybook-button", `storybook-button--${size}`, mode].join(
+        className={["btn", `btn-${size}`, mode].join(
             " "
         )}
-        style={backgroundColor ? { backgroundColor }: {}}
         onClick={onClick}
         >
         {label}
